@@ -17,7 +17,13 @@ module.exports = {
       'body': ['Plus Jakarta Sans', 'sans-serif']
     },
 
-    extend: {},
+    extend: {
+      colors: {
+        'accent-pink': '#e5087e',
+        'accent-blue': '#2b336a',
+        'accent-yellow': '#fce40b',
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 }

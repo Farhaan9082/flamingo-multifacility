@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 interface LayoutProps {
@@ -11,8 +12,10 @@ export const Layout = ({ children }: LayoutProps) => {
       <header>
         <Navbar />
       </header>
-      <main className="pt-20">{children}</main>
-      <footer></footer>
+      <main>{children}</main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
