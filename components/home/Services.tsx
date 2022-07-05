@@ -7,12 +7,14 @@ const Services = () => {
       description:
         "Cover your health related expenses by picking button comprehensive health plan. Try our easy to use platform to understand",
       img: "/guard.png",
+      href: "/services/security",
     },
     {
       name: "Multifacility services",
       description:
         "Cover your health related expenses by picking button comprehensive health plan. Try our easy to use platform to understand",
       img: "/service.png",
+      href: "/services/facility",
     },
   ];
 
@@ -30,12 +32,13 @@ const Services = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 mt-12 gap-10 place-items-center md:grid-cols-2 lg:mt-14 xl:mt-16">
-          {serviceInfo.map(({ name, description, img }) => (
+          {serviceInfo.map(({ name, description, img, href }) => (
             <ServiceCard
               key={name}
               name={name}
               description={description}
               img={img}
+              href={href}
             />
           ))}
         </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Cta = () => {
   return (
     <div className="py-12 md:py-16 xl:py-20 bg-gradient-to-r from-accent-pink to-accent-blue">
@@ -6,12 +8,11 @@ const Cta = () => {
           Get top-notch services for facilities and security management
         </h1>
         <div className="mt-10 w-full flex items-center justify-center max-w-sm sm:max-w-none sm:mt-11 lg:mt-14">
-          <button
-            type="button"
-            className="py-3 bg-white/30 text-sm text-white sm:py-4 sm:flex-grow-0 w-48 md:w-56 lg:w-60 lg:text-lg rounded-full"
-          >
-            Call Us Now
-          </button>
+          <Link href="/contact">
+            <a className="py-3 bg-white/30 text-sm text-white sm:py-4 sm:flex-grow-0 w-48 md:w-56 lg:w-60 lg:text-lg rounded-full">
+              Call Us Now
+            </a>
+          </Link>
         </div>
       </div>
     </div>

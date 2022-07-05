@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -23,18 +24,16 @@ const Hero = () => {
           Suscipit amet quia, ipsam molestiae delectus iure provident nostru.
         </p>
         <div className="mt-10 w-full flex flex-col gap-3 max-w-sm sm:max-w-none sm:flex-row sm:gap-5 sm:mt-11 sm:justify-center sm:items-center lg:mt-14">
-          <button
-            type="button"
-            className="flex-grow py-3 bg-gradient-to-l from-[#e5087e] to-[#2b336a] text-sm text-white sm:py-4 sm:flex-grow-0 sm:w-48 md:w-56 lg:w-60 lg:text-lg rounded-full"
-          >
-            Get In Touch
-          </button>
-          <button
-            type="button"
-            className="flex-grow py-3 bg-gray-500/70 text-sm text-white sm:py-4 sm:flex-grow-0 sm:w-48 md:w-56 lg:w-60 lg:text-lg rounded-full"
-          >
-            How Can We Help?
-          </button>
+          <Link href="/contact">
+            <a className="flex-grow py-3 bg-gradient-to-l from-[#e5087e] to-[#2b336a] text-sm text-white sm:py-4 sm:flex-grow-0 sm:w-48 md:w-56 lg:w-60 lg:text-lg rounded-full">
+              Get In Touch
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="flex-grow py-3 bg-gray-500/70 text-sm text-white sm:py-4 sm:flex-grow-0 sm:w-48 md:w-56 lg:w-60 lg:text-lg rounded-full">
+              How Can We Help?
+            </a>
+          </Link>
         </div>
       </div>
     </div>

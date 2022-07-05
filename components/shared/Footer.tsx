@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
@@ -8,7 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="">
             <div className="w-20 flex items-center justify-center">
-              <img src="/logo.webp" alt="logo" />
+              <Link href="/">
+                <a>
+                  <img src="/logo.webp" alt="logo" />
+                </a>
+              </Link>
             </div>
             <div className="mt-6 flex flex-col gap-5 text-gray-700">
               <div className="flex gap-3 max-w-sm">
@@ -79,11 +85,31 @@ const Footer = () => {
             </div>
           </div>
           <ul className="flex flex-col gap-5 md:place-content-end lg:flex-row lg:place-items-end lg:gap-8">
-            <li className="text-base font-medium tracking-tight">Home</li>
-            <li className="text-base font-medium tracking-tight">About</li>
-            <li className="text-base font-medium tracking-tight">Management</li>
-            <li className="text-base font-medium tracking-tight">Values</li>
-            <li className="text-base font-medium tracking-tight">Objectives</li>
+            <li className="text-base font-medium tracking-tight">
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li className="text-base font-medium tracking-tight">
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </li>
+            <li className="text-base font-medium tracking-tight">
+              <Link href="/management">
+                <a>Management</a>
+              </Link>
+            </li>
+            <li className="text-base font-medium tracking-tight">
+              <Link href="/services">
+                <a>Services</a>
+              </Link>
+            </li>
+            <li className="text-base font-medium tracking-tight">
+              <Link href="/contact">
+                <a>Contact</a>
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="text-center mt-8 pt-4 border-t border-gray-400">
